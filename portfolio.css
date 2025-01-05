@@ -83,6 +83,7 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -181,6 +182,7 @@ nav ul li a:hover::after{
 }
 .work img{
     width: 100%;
+    height: 90%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -200,7 +202,7 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     transition: height 0.5s;
 }
 .layer h3{
@@ -267,5 +269,37 @@ nav ul li a:hover::after{
 .social-icons a:hover{
     color: #ff004f;
     transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 90%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 30px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
 }
 
