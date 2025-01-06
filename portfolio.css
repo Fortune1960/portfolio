@@ -314,7 +314,7 @@ form .btn2{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url("/mee3.jpg");
+        background-image: url("mee3.jpg");
     }
     .header-text{
         margin-top: 50%;
