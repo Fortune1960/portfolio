@@ -9,7 +9,7 @@ body{
     color: #fff;
 }
 #header{
-    background-image: url("/fortune.jpeg");
+    background-image: url("fortune.jpeg");
     width: 100%;
     height: 100vh;
     background-size: cover;
