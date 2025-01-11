@@ -118,7 +118,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: red;
     font-size: 14px;
 }
 .tab-contents{
@@ -239,7 +239,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: red;
 }
 .contact-left{
     flex-basis: 35%;
@@ -276,6 +276,10 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
+}
+.btn.btn2:hover{
+    background: rgba(255, 0, 0, 0.726);
+
 }
 .contact-right form{
     width: 100%;
