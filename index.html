@@ -13,11 +13,11 @@
         <div class="container">
             <nav>
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
                     <div class="show">
                         <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                     </div>
@@ -30,7 +30,7 @@
             
             <div class="header-text">
                 <p>FRONT END WEBSITE DEVELOPER</p>
-                <h1>Hi, I'm <span>Nelson</span> <br>Fortune from Nigeria</h1>
+                <h1>Hi, I'm <span>Nelson</span>Fortune from Nigeria</h1>
             </div>
         </div>
     </div>
@@ -116,7 +116,7 @@
                         <p>The Book will guide beginners on the steps to 
                         <br>Mastering HTML,CSS  & JavaScript.
                         <br>Purchase it from Selar</p>
-                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a href="https://selar.com/733407"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -162,12 +162,13 @@
                     <a href="personal CV.png" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right"> 
-                 <form>
+                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                  </form>
+                 <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -190,5 +191,22 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxdPgCQZXJQyJvO6D2N3nRRa5lwAYT3rKRrCVqahbpsKY-1QRkn51nRm8H384U5KFVJ/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout (function() {
+                msg.innerHTML = ""
+              })
+            },5000)
+    form.reset()
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>

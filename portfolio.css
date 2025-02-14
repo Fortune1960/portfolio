@@ -4,6 +4,9 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: rgb(0, 0, 0);
     color: #fff;
@@ -13,7 +16,7 @@ body{
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position:center;
 }
 .header-text{
     color: white;
@@ -318,15 +321,15 @@ form .btn2{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url("mee3.jpg");
+        background-image: url("professional\ pic.jpg");
     }
     .header-text{
-        margin-top: 50%;
+        margin-top: 90%;
         font-size: 15px;
-        margin-left: 200px;    
+        margin-left: 80px;    
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 27px;
     }
     .header-text p{
         font-size: 18px;
@@ -358,5 +361,11 @@ form .btn2{
         font-size: 28px;
     }
     
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+
 }
 
