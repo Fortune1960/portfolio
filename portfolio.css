@@ -16,10 +16,8 @@ body{
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position:center;
-}
-.header-text{
-    color: white;
+    background-position: center 7%;   /* Shows more of your face */
+    background-repeat: no-repeat;
 }
 .container{
      padding: 10px 10%;
@@ -55,14 +53,13 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
-    color: black;
-    font-size: 20px;
-    margin-left: 650px;
-    
+    margin-top:20%;
+    margin-left:750px;
+    width:45%;
+    color:#000;
 }
 .header-text h1{
-    font-size: 43px;
+    font-size: 33px;
     margin-top: 25px;
 }
 .header-text h1 span{
@@ -361,6 +358,123 @@ form .btn2{
     .services-list{
         font-size: 28px;
     }
+
+    /* HEADER */
+
+    #header{
+        background-image: url("Fortune.JPG");
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .header-text{
+        margin-top: 80%;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    .header-text p{
+        font-size: 17px;
+    }
+
+    /* NAVIGATION */
+
+    .visibility{
+        display: block;
+        font-size: 28px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .show{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    nav ul{
+        background: #949393;
+        position: fixed;
+        top: 0;
+        right: -230px;
+        width: 220px;
+        height: 100vh;
+        padding-top: 80px;
+        z-index: 1000;
+        transition: right .5s;
+        box-shadow: -5px 0 20px rgba(0,0,0,.4);
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a{
+    display:block;
+    padding:12px 15px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    background:#ff004f;
+    color:#fff;
+    padding-left:20px;
+}
+
+    /* ABOUT */
+
+    .sub-title{
+        font-size:40px;
+    }
+
+    .about-col-1,
+    .about-col-2{
+        flex-basis:100%;
+    }
+
+    .about-col-1{
+        margin-bottom:30px;
+    }
+
+    .about-col-2{
+        font-size:17px;
+    }
+
+    .tab-links{
+        font-size:18px;
+        margin-right:20px;
+    }
+
+    /* CONTACT */
+
+    .contact-left,
+    .contact-right{
+        flex-basis:100%;
+        margin-left:0;
+    }
+
+    form input,
+    form textarea{
+        width:100%;
+        margin:15px 0;
+    }
+
+    .copyright{
+        font-size:16px;
+    }
+
+
     
 }
 #msg{
